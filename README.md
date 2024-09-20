@@ -6,8 +6,22 @@ This is a Python server-side application built with Django, designed to manage z
 - Usage
 - API Endpoints
 
-
 ## Installation
+
+### Option 1: Using Docker
+1. **Clone the repository**:
+   `git clone https://github.com/eyalh15/zones-server.git`
+
+2. **Change directory**:
+   `cd zones-server`
+
+3. **Build the Docker image**
+   `docker build -t zones-server .`
+
+4. **Run the Docker container**   
+   `docker run -p 8000:8000 zones-server`
+
+### Option 2: Manual Setup
 1. **Clone the repository**:
    `git clone https://github.com/eyalh15/zones-server.git`
 
@@ -20,7 +34,6 @@ This is a Python server-side application built with Django, designed to manage z
 
 4. **Install dependencies**:
    `pip install -r requirements.txt`
-
 
 5. **Start the development server**:
    `python manage.py runserver`
